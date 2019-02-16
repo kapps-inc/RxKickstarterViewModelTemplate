@@ -2,19 +2,17 @@
 //  ___FILENAME___
 //  ___PROJECTNAME___
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 protocol ___FILEBASENAMEASIDENTIFIER___Inputs {
-    func <#name#>()
+    var <#name#>: AnyObserver<<#type#>> { get }
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___Outputs {
-    var <#name#>: Observable<<#type#>> { get }
+    var <#driver#>: Driver<<#type#>> { get }
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___Type {
@@ -23,26 +21,20 @@ protocol ___FILEBASENAMEASIDENTIFIER___Type {
 }
 
 class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Inputs, ___FILEBASENAMEASIDENTIFIER___Outputs, ___FILEBASENAMEASIDENTIFIER___Type {
-    
-    var inputs: ___FILEBASENAMEASIDENTIFIER___Inputs { return self }
-    var outputs: ___FILEBASENAMEASIDENTIFIER___Outputs { return self }
+    private let <#name#>Subject = PublishSubject<<#type#>>()
     
     private let disposeBag = DisposeBag()
     
-    // MARK: - ___FILEBASENAMEASIDENTIFIER___Inputs
-    
-    let <#name#>: Observable<<#type#>>
-    
-    // MARK: -
-    
     init() {
-        
+         
+
+        self.<#name#> = <#name#>Subject.asObserver()
     }
+
+    let <#name#>: AnyObserver<<#type#>>
     
-    // MARK: - ___FILEBASENAMEASIDENTIFIER___Outputs
-    
-    func <#name#>() {
-        
-    }
-    
+    let <#driver#>: Driver<<#type#>>
+
+    var inputs: ___FILEBASENAMEASIDENTIFIER___Inputs { return self }
+    var outputs: ___FILEBASENAMEASIDENTIFIER___Outputs { return self }
 }
