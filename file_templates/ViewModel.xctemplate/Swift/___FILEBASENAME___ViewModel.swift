@@ -21,9 +21,9 @@ protocol ___FILEBASENAMEASIDENTIFIER___Type {
 }
 
 class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Inputs, ___FILEBASENAMEASIDENTIFIER___Outputs, ___FILEBASENAMEASIDENTIFIER___Type {
-    private let <#name#>Subject = PublishSubject<<#type#>>()
+    // MARK: - subjects
     
-    private let disposeBag = DisposeBag()
+    private let <#name#>Subject = PublishSubject<<#type#>>()
     
     init() {
          
@@ -31,7 +31,11 @@ class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Inputs, ___F
         self.<#name#> = <#name#>Subject.asObserver()
     }
 
+    // MARK: - inputs
+    
     let <#name#>: AnyObserver<<#type#>>
+    
+    // MARK: - outputs
     
     let <#driver#>: Driver<<#type#>>
 
