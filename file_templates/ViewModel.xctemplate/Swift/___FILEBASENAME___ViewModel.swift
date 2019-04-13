@@ -1,6 +1,5 @@
 //
 //  ___FILENAME___
-//  ___PROJECTNAME___
 //
 
 import Foundation
