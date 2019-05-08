@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.swift</string>
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
 	<key>Description</key>
-	<string>A ViewModel class</string>
+	<string>A Model class.</string>
 	<key>Summary</key>
-	<string>kickstarter-ios ViewModel</string>
+	<string>kickstarter-ios Model</string>
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>DefaultCompletionName</key>
