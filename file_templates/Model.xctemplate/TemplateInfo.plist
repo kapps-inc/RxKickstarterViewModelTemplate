@@ -27,7 +27,7 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>Name :</string>
+			<string>Name:</string>
 			<key>Description</key>
 			<string>The name of the class to create</string>
 			<key>Type</key>
