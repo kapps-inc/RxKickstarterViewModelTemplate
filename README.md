@@ -15,7 +15,7 @@ $ ./install.sh
 1. Open a Xcode project.
 2. File > New > File...
 3. Select ViewModel in RxKickstarter section 
-4. Type class name without "ViewModel", for example, you type "Hoge" and Xcode makes HogeViewModel.swift
+4. Type class name, for example, you type "HogeViewModel" and Xcode makes HogeViewModel.swift
 
 
 
