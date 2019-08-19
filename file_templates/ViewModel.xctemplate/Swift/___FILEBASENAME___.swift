@@ -6,25 +6,25 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol ___FILEBASENAMEASIDENTIFIER___Inputs {
+public protocol ___FILEBASENAMEASIDENTIFIER___Inputs {
     var <#name#>: AnyObserver<<#type#>> { get }
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___Outputs {
+public protocol ___FILEBASENAMEASIDENTIFIER___Outputs {
     var <#driver#>: Driver<<#type#>> { get }
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___Type {
+public protocol ___FILEBASENAMEASIDENTIFIER___Type {
     var inputs: ___FILEBASENAMEASIDENTIFIER___Inputs { get }
     var outputs: ___FILEBASENAMEASIDENTIFIER___Outputs { get }
 }
 
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Inputs, ___FILEBASENAMEASIDENTIFIER___Outputs, ___FILEBASENAMEASIDENTIFIER___Type {
+public class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Inputs, ___FILEBASENAMEASIDENTIFIER___Outputs, ___FILEBASENAMEASIDENTIFIER___Type {
     // MARK: - subjects
     
     private let <#name#>Subject = PublishSubject<<#type#>>()
     
-    init() {
+    public init() {
          
 
         self.<#name#> = <#name#>Subject.asObserver()
@@ -32,12 +32,12 @@ class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Inputs, ___F
 
     // MARK: - inputs
     
-    let <#name#>: AnyObserver<<#type#>>
+    public let <#name#>: AnyObserver<<#type#>>
     
     // MARK: - outputs
     
-    let <#driver#>: Driver<<#type#>>
+    public let <#driver#>: Driver<<#type#>>
 
-    var inputs: ___FILEBASENAMEASIDENTIFIER___Inputs { return self }
-    var outputs: ___FILEBASENAMEASIDENTIFIER___Outputs { return self }
+    public var inputs: ___FILEBASENAMEASIDENTIFIER___Inputs { return self }
+    public var outputs: ___FILEBASENAMEASIDENTIFIER___Outputs { return self }
 }

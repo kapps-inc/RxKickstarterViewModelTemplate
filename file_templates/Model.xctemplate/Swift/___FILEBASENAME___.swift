@@ -5,16 +5,16 @@
 import Foundation
 import ObjectMapper
 
-struct ___FILEBASENAMEASIDENTIFIER___ {
+public struct ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: Mappable {
-    init?(map: Map) {
+    public init?(map: Map) {
         
     }
     
-    mutating func mapping(map: Map) {
+    mutating public func mapping(map: Map) {
         
     }
 }
