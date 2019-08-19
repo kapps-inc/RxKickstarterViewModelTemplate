@@ -14,7 +14,7 @@ extension ___FILEBASENAMEASIDENTIFIER___: Mappable {
         
     }
     
-    mutating public func mapping(map: Map) {
+    public mutating func mapping(map: Map) {
         
     }
 }
